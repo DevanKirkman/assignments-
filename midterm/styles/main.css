@@ -1,0 +1,154 @@
+* {
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+:root {
+    --Blue-950: hsl(256, 26%, 20%);
+    --Blue-500: hsl(216, 30%, 68%);
+    --Gray-950: hsl(270, 9%, 17%);
+    --Gray-700: hsl(273, 4%, 51%);
+    --Gray-50: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: "Karla", serif;
+    font-weight: 400, 700;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-image: var(--Gray-950);
+    border-radius: 0 0 0 100px;
+}
+
+#header-mobile-nav {
+    padding: 16px 16px 8px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    
+}
+
+#mobile-nav {
+    color: var(--Gray-950);
+    font-size: 2em; 
+    margin: 0 0.25em; 
+    cursor: pointer;
+}
+
+#header-bottom-nav {
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+#header-bottom-nav li {
+    border-bottom: 1px solid lightgrey;
+}
+
+#header-bottom-nav a {
+    font-size: 1.2em; /* Increases font-size 20% */
+    display: block; /* A tags are inline elements by default. Making this a block allows you to add top/bottom padding and margin, and makes it full width */
+    padding: 20px;
+    text-decoration:none;
+    color: var(--light-red);
+    font-weight: 700;
+}
+
+#header-bottom-nav .active, #header-bottom-nav a:hover {
+    color: var(--red);
+}
+
+#jumbotron {
+    padding: 100px 40px;
+    text-align: center;
+    color: white;
+}
+#jumbotron h1 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+#jumbotron p {
+    font-size: 1.4em;
+    line-height: 1.4em;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.btn {
+    padding: 12px 24px 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: var(--gray-dark);
+    text-align: center;
+    padding: 100px 40px;
+    border-radius: 0 100px 0 0;
+}
+
+footer h3 {
+    color: white;
+    margin: 20px 0;
+}
+
+footer a {
+    color: var(--gray-light);
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    padding: 100px 50px;
+}
+
+main h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+    font-weight: 500;
+    margin: 40px 0;
+    color: var(--gray-dark);
+}
+
+main p {
+    color: var(--gray-medium);
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+#infrastructure {
+    background-color: var(--gray-dark);
+    margin: 0 -50px;
+    width: 100
+}
+
+#infrastructure h2, #infrastructure p {
+    color: white;
+}
